@@ -40,17 +40,17 @@ import UIKit
     }
     
     
-    @objc private func toggleShowPassword(sender:AnyObject){
+    @objc fileprivate func toggleShowPassword(_ sender:AnyObject){
         
         let wasFirstResponder = false
         
-        if wasFirstResponder == self.isFirstResponder() {
+        if wasFirstResponder == self.isFirstResponder {
             
             self.resignFirstResponder()
             
         }
         
-        self.secureTextEntry = !self.secureTextEntry
+        self.isSecureTextEntry = !self.isSecureTextEntry
         
         self.changeImageWithAnimation()
 
@@ -58,16 +58,16 @@ import UIKit
     }
     
     
-    private func addShowHideButton(){
+    fileprivate func addShowHideButton(){
         
         let height = self.frame.size.height;
-        let frame = CGRectMake(0,0, 50, height)
+        let frame = CGRect(x: 0,y: 0, width: 50, height: height)
         
         eyeButton = UIButton(frame: frame)
-        eyeButton.backgroundColor = .clearColor()
-        eyeButton.setImage(showTextImage, forState: UIControlState.Normal)
-        self.rightViewMode = UITextFieldViewMode.WhileEditing
-        eyeButton.addTarget(self, action: #selector(toggleShowPassword(_:)), forControlEvents: UIControlEvents.TouchUpInside)
+        eyeButton.backgroundColor = .clear
+        eyeButton.setImage(showTextImage, for: UIControlState())
+        self.rightViewMode = UITextFieldViewMode.whileEditing
+        eyeButton.addTarget(self, action: #selector(toggleShowPassword(_:)), for: UIControlEvents.touchUpInside)
         self.rightView = eyeButton
         self.addSubview(eyeButton)
 
@@ -88,18 +88,18 @@ import UIKit
 
     }
     
-    private func changeImageWithAnimation(){
+    fileprivate func changeImageWithAnimation(){
     
     
         eyeButton.alpha = 0
-        UIView.animateKeyframesWithDuration(0.3, delay: 0.0, options: [], animations: {
+        UIView.animateKeyframes(withDuration: 0.3, delay: 0.0, options: [], animations: {
             
             self.eyeButton.alpha = 1
             
-            if self.secureTextEntry {
-                self.eyeButton.setImage(self.showTextImage, forState: UIControlState.Normal)
+            if self.isSecureTextEntry {
+                self.eyeButton.setImage(self.showTextImage, for: UIControlState())
             }else {
-                self.eyeButton.setImage(self.hideTextImage, forState: UIControlState.Normal)
+                self.eyeButton.setImage(self.hideTextImage, for: UIControlState())
                 self.resetTextFont()
             }
             
@@ -108,7 +108,7 @@ import UIKit
     }
     
     
-    private func resetTextFont(){
+    fileprivate func resetTextFont(){
     
         self.attributedText = NSAttributedString(string: self.text!)
     
