@@ -9,8 +9,8 @@ AASecureTextField provides a friendly way to show or hide password for secure te
 
 ## How to use AASecureTextField ##
 ##### 1) import ```AASecureTextField.swift``` into your project <br/>
-#####2) Drag UITextField in Storyboard and from identity inspector change class to : AASecureTextField <br/>
-#####3) Choose textfield and from attribute inspector set show/hide image as UIImage<br/>
+##### 2) Drag UITextField in Storyboard and from identity inspector change class to : AASecureTextField <br/>
+##### 3) Choose textfield and from attribute inspector set show/hide image as UIImage<br/>
 ##### 4) We Are All set ;) <br/> 
 
 
