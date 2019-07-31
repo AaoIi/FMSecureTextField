@@ -10,7 +10,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet var myTextField: AASecureTextField!
+    @IBOutlet var myTextField: FMSecureTextField!{
+        didSet{
+            myTextField.secureViewShowMode = .always
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

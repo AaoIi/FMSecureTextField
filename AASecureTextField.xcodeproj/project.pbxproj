@@ -14,7 +14,7 @@
 		CE44467A1CFEBB380059D6CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE4446781CFEBB380059D6CF /* LaunchScreen.storyboard */; };
 		CE4446851CFEBB390059D6CF /* AASecureTextFieldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4446841CFEBB390059D6CF /* AASecureTextFieldTests.swift */; };
 		CE4446901CFEBB390059D6CF /* AASecureTextFieldUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE44468F1CFEBB390059D6CF /* AASecureTextFieldUITests.swift */; };
-		CE44469E1CFEBB620059D6CF /* AASecureTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE44469D1CFEBB620059D6CF /* AASecureTextField.swift */; };
+		CE44469E1CFEBB620059D6CF /* FMSecureTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE44469D1CFEBB620059D6CF /* FMSecureTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +48,7 @@
 		CE44468B1CFEBB390059D6CF /* AASecureTextFieldUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AASecureTextFieldUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE44468F1CFEBB390059D6CF /* AASecureTextFieldUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AASecureTextFieldUITests.swift; sourceTree = "<group>"; };
 		CE4446911CFEBB390059D6CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CE44469D1CFEBB620059D6CF /* AASecureTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AASecureTextField.swift; path = Classes/AASecureTextField.swift; sourceTree = "<group>"; };
+		CE44469D1CFEBB620059D6CF /* FMSecureTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FMSecureTextField.swift; path = Classes/FMSecureTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,7 +131,7 @@
 		CE4446A11CFED4400059D6CF /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				CE44469D1CFEBB620059D6CF /* AASecureTextField.swift */,
+				CE44469D1CFEBB620059D6CF /* FMSecureTextField.swift */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -199,12 +199,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 1030;
 				ORGANIZATIONNAME = AaoIi;
 				TargetAttributes = {
 					CE44466B1CFEBB380059D6CF = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = Z27X2MWLK6;
+						DevelopmentTeam = DF54Z6BU73;
 						LastSwiftMigration = 0830;
 					};
 					CE44467F1CFEBB390059D6CF = {
@@ -224,6 +224,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -271,7 +272,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE44469E1CFEBB620059D6CF /* AASecureTextField.swift in Sources */,
+				CE44469E1CFEBB620059D6CF /* FMSecureTextField.swift in Sources */,
 				CE4446721CFEBB380059D6CF /* ViewController.swift in Sources */,
 				CE4446701CFEBB380059D6CF /* AppDelegate.swift in Sources */,
 			);
@@ -332,19 +333,28 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -379,19 +389,28 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -420,12 +439,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = Z27X2MWLK6;
+				DEVELOPMENT_TEAM = DF54Z6BU73;
 				INFOPLIST_FILE = AASecureTextField/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.AaoIi.AASecureTextField;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -433,12 +452,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = Z27X2MWLK6;
+				DEVELOPMENT_TEAM = DF54Z6BU73;
 				INFOPLIST_FILE = AASecureTextField/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.AaoIi.AASecureTextField;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
