@@ -1,0 +1,617 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		12A4710A3C27326E0C8D0DAE9E424BFA /* FMSecureTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = B70742F329EC61857D519DCFB7102EA5 /* FMSecureTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3216AB513077710938EF56E96B11EE7E /* FMSecureTextField-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A7D203503AE34E90D2AEE554BAEADFE4 /* FMSecureTextField-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		360322F0B59076D0323D4D2774D64D99 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		362E80E7A68317D5034CF4819110304F /* Pods-FMSecureTextFieldExample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3009490082B49F25C6181C04816FFB46 /* Pods-FMSecureTextFieldExample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		38C98E8BD996B3C6453AF17DF3EFCC42 /* FMSecureTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99E5915CD7B34C04217BE76B34F8811 /* FMSecureTextField.swift */; };
+		5538BE5FA668D8D69D22C0D82AA47420 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		60BE6C792E707F3D01B64D4594260528 /* FMSecureTextField-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 062C3CC5F538D2835DBEDF7B1CC11D90 /* FMSecureTextField-dummy.m */; };
+		76AA562F0EFA00E5AC804E2C21CFF81B /* Pods-FMSecureTextFieldExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 145FE8616F92B029E5A67BDD51E2C676 /* Pods-FMSecureTextFieldExample-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C88F9204C4C6FD1DE6598146CE4F09F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1D8DAB19BF65E5F76F9224F755A1BE6;
+			remoteInfo = FMSecureTextField;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		062C3CC5F538D2835DBEDF7B1CC11D90 /* FMSecureTextField-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FMSecureTextField-dummy.m"; sourceTree = "<group>"; };
+		145FE8616F92B029E5A67BDD51E2C676 /* Pods-FMSecureTextFieldExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FMSecureTextFieldExample-dummy.m"; sourceTree = "<group>"; };
+		18C766E1DA2E128249FB3BBA3C452D6B /* FMSecureTextField-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FMSecureTextField-Info.plist"; sourceTree = "<group>"; };
+		3009490082B49F25C6181C04816FFB46 /* Pods-FMSecureTextFieldExample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FMSecureTextFieldExample-umbrella.h"; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		4C764547ADF88221CF2E6401B0B0DBD3 /* FMSecureTextField.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = FMSecureTextField.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		4FBA0C05EFA94E4806E1C87D1867B946 /* Pods-FMSecureTextFieldExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FMSecureTextFieldExample.release.xcconfig"; sourceTree = "<group>"; };
+		529F692E24414C55337A86C549E0DE07 /* FMSecureTextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FMSecureTextField.framework; path = FMSecureTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		83318A1CA96D8E924C796A9EDFE30924 /* Pods-FMSecureTextFieldExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FMSecureTextFieldExample-acknowledgements.markdown"; sourceTree = "<group>"; };
+		899014068510782669E6F20CB61B8C1B /* Pods-FMSecureTextFieldExample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FMSecureTextFieldExample.modulemap"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A43088A5357FE92F34C4D190E3984428 /* Pods-FMSecureTextFieldExample-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FMSecureTextFieldExample-Info.plist"; sourceTree = "<group>"; };
+		A569D4D2AE413CFE72CFDA5ED4D47456 /* Pods-FMSecureTextFieldExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FMSecureTextFieldExample.debug.xcconfig"; sourceTree = "<group>"; };
+		A7D203503AE34E90D2AEE554BAEADFE4 /* FMSecureTextField-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FMSecureTextField-umbrella.h"; sourceTree = "<group>"; };
+		A937312CB80BE32DC83038690424981C /* FMSecureTextField-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FMSecureTextField-prefix.pch"; sourceTree = "<group>"; };
+		B70742F329EC61857D519DCFB7102EA5 /* FMSecureTextField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMSecureTextField.h; path = FMSecureTextField/FMSecureTextField.h; sourceTree = "<group>"; };
+		B796DEA709E9B78759E2E1C65CDDA28A /* FMSecureTextField.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FMSecureTextField.modulemap; sourceTree = "<group>"; };
+		B99E5915CD7B34C04217BE76B34F8811 /* FMSecureTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FMSecureTextField.swift; path = FMSecureTextField/FMSecureTextField.swift; sourceTree = "<group>"; };
+		D32F4642B4307761756EBEC016060D1B /* Pods-FMSecureTextFieldExample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FMSecureTextFieldExample-frameworks.sh"; sourceTree = "<group>"; };
+		D620E8660FE6EF367B23397D4341F39B /* Pods-FMSecureTextFieldExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FMSecureTextFieldExample-acknowledgements.plist"; sourceTree = "<group>"; };
+		D74B729BB4FB04322263B2CB5E0C1083 /* Pods_FMSecureTextFieldExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FMSecureTextFieldExample.framework; path = "Pods-FMSecureTextFieldExample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D98DE65397EBD7A02EDF72DBFF4E5BDE /* FMSecureTextField.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FMSecureTextField.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2EDFC815D5F162CF0A3D5FA1CB4BF9BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				360322F0B59076D0323D4D2774D64D99 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		863B51CBC69DB4BDBCD14A61C43C7CFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5538BE5FA668D8D69D22C0D82AA47420 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0291906FF7EE1D466C3FE473A9723FD2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				529F692E24414C55337A86C549E0DE07 /* FMSecureTextField.framework */,
+				D74B729BB4FB04322263B2CB5E0C1083 /* Pods_FMSecureTextFieldExample.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		141D30489468245FB50FE37FD0BD5A7D /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				4C764547ADF88221CF2E6401B0B0DBD3 /* FMSecureTextField.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		329D53CC6B3E6EE872169B13AB978A6C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B796DEA709E9B78759E2E1C65CDDA28A /* FMSecureTextField.modulemap */,
+				D98DE65397EBD7A02EDF72DBFF4E5BDE /* FMSecureTextField.xcconfig */,
+				062C3CC5F538D2835DBEDF7B1CC11D90 /* FMSecureTextField-dummy.m */,
+				18C766E1DA2E128249FB3BBA3C452D6B /* FMSecureTextField-Info.plist */,
+				A937312CB80BE32DC83038690424981C /* FMSecureTextField-prefix.pch */,
+				A7D203503AE34E90D2AEE554BAEADFE4 /* FMSecureTextField-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../FMSecureTextFieldExample/Pods/Target Support Files/FMSecureTextField";
+			sourceTree = "<group>";
+		};
+		33A934E8348EB7473750EDD18F8C4A9A /* Pods-FMSecureTextFieldExample */ = {
+			isa = PBXGroup;
+			children = (
+				899014068510782669E6F20CB61B8C1B /* Pods-FMSecureTextFieldExample.modulemap */,
+				83318A1CA96D8E924C796A9EDFE30924 /* Pods-FMSecureTextFieldExample-acknowledgements.markdown */,
+				D620E8660FE6EF367B23397D4341F39B /* Pods-FMSecureTextFieldExample-acknowledgements.plist */,
+				145FE8616F92B029E5A67BDD51E2C676 /* Pods-FMSecureTextFieldExample-dummy.m */,
+				D32F4642B4307761756EBEC016060D1B /* Pods-FMSecureTextFieldExample-frameworks.sh */,
+				A43088A5357FE92F34C4D190E3984428 /* Pods-FMSecureTextFieldExample-Info.plist */,
+				3009490082B49F25C6181C04816FFB46 /* Pods-FMSecureTextFieldExample-umbrella.h */,
+				A569D4D2AE413CFE72CFDA5ED4D47456 /* Pods-FMSecureTextFieldExample.debug.xcconfig */,
+				4FBA0C05EFA94E4806E1C87D1867B946 /* Pods-FMSecureTextFieldExample.release.xcconfig */,
+			);
+			name = "Pods-FMSecureTextFieldExample";
+			path = "Target Support Files/Pods-FMSecureTextFieldExample";
+			sourceTree = "<group>";
+		};
+		35EC3AE7E120E87F00195BF86B6C857E /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3AF7CBED29AC48E4D98BD7B3CA15C1B4 /* FMSecureTextField */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		3AF7CBED29AC48E4D98BD7B3CA15C1B4 /* FMSecureTextField */ = {
+			isa = PBXGroup;
+			children = (
+				B70742F329EC61857D519DCFB7102EA5 /* FMSecureTextField.h */,
+				B99E5915CD7B34C04217BE76B34F8811 /* FMSecureTextField.swift */,
+				141D30489468245FB50FE37FD0BD5A7D /* Pod */,
+				329D53CC6B3E6EE872169B13AB978A6C /* Support Files */,
+			);
+			name = FMSecureTextField;
+			path = ../../FMSecureTextField;
+			sourceTree = "<group>";
+		};
+		9315ECEE890350A2F1A0D1298E1FCD89 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				33A934E8348EB7473750EDD18F8C4A9A /* Pods-FMSecureTextFieldExample */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				35EC3AE7E120E87F00195BF86B6C857E /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				0291906FF7EE1D466C3FE473A9723FD2 /* Products */,
+				9315ECEE890350A2F1A0D1298E1FCD89 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4C4E93F821A40E1F593F70104D4AAA26 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				362E80E7A68317D5034CF4819110304F /* Pods-FMSecureTextFieldExample-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73950D0F3266D091CC20EB8B8D41BF60 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3216AB513077710938EF56E96B11EE7E /* FMSecureTextField-umbrella.h in Headers */,
+				12A4710A3C27326E0C8D0DAE9E424BFA /* FMSecureTextField.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		A1D8DAB19BF65E5F76F9224F755A1BE6 /* FMSecureTextField */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F8EE50815F05BDFAE7639F945B9FFC3 /* Build configuration list for PBXNativeTarget "FMSecureTextField" */;
+			buildPhases = (
+				73950D0F3266D091CC20EB8B8D41BF60 /* Headers */,
+				397E6F64818EF92553AF99D33BE128DD /* Sources */,
+				863B51CBC69DB4BDBCD14A61C43C7CFD /* Frameworks */,
+				B10A36E704DCB822856E0A6BF5EE85B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FMSecureTextField;
+			productName = FMSecureTextField;
+			productReference = 529F692E24414C55337A86C549E0DE07 /* FMSecureTextField.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AE3B150D1F0EAC8FC77139C242353FEE /* Pods-FMSecureTextFieldExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E8DF3B34D2F74AE8BAE7959BBA699C2 /* Build configuration list for PBXNativeTarget "Pods-FMSecureTextFieldExample" */;
+			buildPhases = (
+				4C4E93F821A40E1F593F70104D4AAA26 /* Headers */,
+				2548C9FE2A35C0F9C636B3181B8405BA /* Sources */,
+				2EDFC815D5F162CF0A3D5FA1CB4BF9BB /* Frameworks */,
+				373E5B1606B6FB0851DE4BB927CD5EAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A83A895DCC872FA483BE063912F2DA4E /* PBXTargetDependency */,
+			);
+			name = "Pods-FMSecureTextFieldExample";
+			productName = "Pods-FMSecureTextFieldExample";
+			productReference = D74B729BB4FB04322263B2CB5E0C1083 /* Pods_FMSecureTextFieldExample.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 0291906FF7EE1D466C3FE473A9723FD2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A1D8DAB19BF65E5F76F9224F755A1BE6 /* FMSecureTextField */,
+				AE3B150D1F0EAC8FC77139C242353FEE /* Pods-FMSecureTextFieldExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		373E5B1606B6FB0851DE4BB927CD5EAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B10A36E704DCB822856E0A6BF5EE85B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2548C9FE2A35C0F9C636B3181B8405BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76AA562F0EFA00E5AC804E2C21CFF81B /* Pods-FMSecureTextFieldExample-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		397E6F64818EF92553AF99D33BE128DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60BE6C792E707F3D01B64D4594260528 /* FMSecureTextField-dummy.m in Sources */,
+				38C98E8BD996B3C6453AF17DF3EFCC42 /* FMSecureTextField.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A83A895DCC872FA483BE063912F2DA4E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FMSecureTextField;
+			target = A1D8DAB19BF65E5F76F9224F755A1BE6 /* FMSecureTextField */;
+			targetProxy = C88F9204C4C6FD1DE6598146CE4F09F4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6410F571BA8C1AEC6A19403F1B61B0B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		8E26DB9271951DDFD068E4236610CFC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FBA0C05EFA94E4806E1C87D1867B946 /* Pods-FMSecureTextFieldExample.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-FMSecureTextFieldExample/Pods-FMSecureTextFieldExample-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FMSecureTextFieldExample/Pods-FMSecureTextFieldExample.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A27713CB74E99AF202AADC23200A32F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		A70F84C3BC3CBE4367EBF4986C56D5CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A569D4D2AE413CFE72CFDA5ED4D47456 /* Pods-FMSecureTextFieldExample.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-FMSecureTextFieldExample/Pods-FMSecureTextFieldExample-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FMSecureTextFieldExample/Pods-FMSecureTextFieldExample.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D2AEB450857E6F9D938BB0FBF6E36276 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D98DE65397EBD7A02EDF72DBFF4E5BDE /* FMSecureTextField.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FMSecureTextField/FMSecureTextField-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FMSecureTextField/FMSecureTextField-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/FMSecureTextField/FMSecureTextField.modulemap";
+				PRODUCT_MODULE_NAME = FMSecureTextField;
+				PRODUCT_NAME = FMSecureTextField;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E25B7C9F48ADEE831FCE9477EDA12CB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D98DE65397EBD7A02EDF72DBFF4E5BDE /* FMSecureTextField.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FMSecureTextField/FMSecureTextField-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FMSecureTextField/FMSecureTextField-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/FMSecureTextField/FMSecureTextField.modulemap";
+				PRODUCT_MODULE_NAME = FMSecureTextField;
+				PRODUCT_NAME = FMSecureTextField;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3E8DF3B34D2F74AE8BAE7959BBA699C2 /* Build configuration list for PBXNativeTarget "Pods-FMSecureTextFieldExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A70F84C3BC3CBE4367EBF4986C56D5CE /* Debug */,
+				8E26DB9271951DDFD068E4236610CFC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6410F571BA8C1AEC6A19403F1B61B0B5 /* Debug */,
+				A27713CB74E99AF202AADC23200A32F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F8EE50815F05BDFAE7639F945B9FFC3 /* Build configuration list for PBXNativeTarget "FMSecureTextField" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E25B7C9F48ADEE831FCE9477EDA12CB7 /* Debug */,
+				D2AEB450857E6F9D938BB0FBF6E36276 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

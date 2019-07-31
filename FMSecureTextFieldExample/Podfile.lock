@@ -1,0 +1,16 @@
+PODS:
+  - FMSecureTextField (1.0.0)
+
+DEPENDENCIES:
+  - FMSecureTextField (from `../FMSecureTextField/`)
+
+EXTERNAL SOURCES:
+  FMSecureTextField:
+    :path: "../FMSecureTextField/"
+
+SPEC CHECKSUMS:
+  FMSecureTextField: bf42cb469d1cf1ddc13e3dfa8118bbd2d52254bd
+
+PODFILE CHECKSUM: c017a112ac9f08e36b10d154eb285309f7b95160
+
+COCOAPODS: 1.7.2

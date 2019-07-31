@@ -1,0 +1,6 @@
+framework module FMSecureTextField {
+  umbrella header "FMSecureTextField-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hDU-9g-Jct">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="bIG-0b-QWc">
+            <objects>
+                <viewController id="kFg-Om-zGp" customClass="ViewController" customModule="AASecureTextField" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="C46-Z8-ec8"/>
+                        <viewControllerLayoutGuide type="bottom" id="LnU-LH-Wlu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lWv-oN-aRk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yb1-4X-zch" customClass="FMSecureTextField" customModule="FMSecureTextField">
+                                <rect key="frame" x="20" y="108" width="374" height="45"/>
+                                <color key="backgroundColor" red="0.47450980390000003" green="0.47058823529999999" blue="0.46666666670000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="9V1-O6-O1u"/>
+                                </constraints>
+                                <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="showText" value="Show"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="hideText" value="Hide"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="secureTypeText" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="showImage" value="view-password"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="hideImage" value="hide-password"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="secureTypeImage" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="yb1-4X-zch" firstAttribute="top" secondItem="fFb-JA-OPm" secondAttribute="top" constant="20" id="R6t-QL-oih"/>
+                            <constraint firstItem="yb1-4X-zch" firstAttribute="leading" secondItem="lWv-oN-aRk" secondAttribute="leading" constant="20" id="gr5-c4-Pv7"/>
+                            <constraint firstAttribute="trailing" secondItem="yb1-4X-zch" secondAttribute="trailing" constant="20" id="s4U-Le-wXj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fFb-JA-OPm"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ktD-Ld-PdT"/>
+                    <connections>
+                        <outlet property="passwordTextField" destination="yb1-4X-zch" id="Lg8-0d-idK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0XI-Ud-fsU" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1092" y="283"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Ex4-Qs-jRX">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hDU-9g-Jct" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="PJq-od-iPq">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="kFg-Om-zGp" kind="relationship" relationship="rootViewController" id="XU9-pO-2H0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sbN-cS-413" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="280" y="283"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="hide-password" width="15.5" height="16"/>
+        <image name="view-password" width="15.5" height="16"/>
+    </resources>
+</document>
