@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:AASecureTextField.xcodeproj">
+      location = "self:FMSecureTextField.xcodeproj">
    </FileRef>
 </Workspace>
