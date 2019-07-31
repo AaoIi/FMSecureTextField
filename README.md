@@ -5,7 +5,7 @@ FMSecureTextField provides a friendly way to show or hide password for secure te
 
 
 ## Preview Demo
-<img src="https://lh5.googleusercontent.com/EH6zR9YZPqQYbCm24HYjbTSPCeaRqc9wyG5YVjom7Oiog9eZM5iknw=w373-h642-p-b1-c0x00999999">
+<img src="https://raw.githubusercontent.com/AaoIi/FMSecureTextField/master/demo.gif">
 
 ## Installation
 
